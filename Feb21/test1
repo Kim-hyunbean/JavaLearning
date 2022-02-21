@@ -1,0 +1,16 @@
+package Feb21;
+
+public class test1 {
+    public static void main(String[] args) {
+        System.out.println("Hello, world.");
+    } // main 만들기
+    // sout ctrl + space = system.out.println
+
+    /*자주 발생하는 에러
+    cannot fin symbol , cannot resolve symbol 지정된 변수나 메서드를 찾을수없음 이름을 잘못 사용
+    ';' expected 세미콜론 빼먹지말기
+    Exception in thread "main" java.lang.NoSuchMethodError: main 메인메서드를 찾을 수 없다.
+    illegal start of expression 문법이 맞지않다 {} 확인
+    class, interface, or enum expected 키워드 클래스나 이넘이 없다.  {}의 개수가 같지 않을때 발생    */
+
+}
