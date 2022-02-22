@@ -1,0 +1,18 @@
+package Feb22;
+
+import java.util.Scanner;
+
+public class Saccner {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("정수 두개를 입력하세요 >> "); //공백금지
+        String input = scanner.nextLine();
+        int num = Integer.parseInt(input);
+
+        System.out.println("입력 내용 : " +input);
+        System.out.printf("num=%d%n",num);
+
+
+    }
+}
