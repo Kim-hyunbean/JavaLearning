@@ -1,0 +1,53 @@
+package Feb22;
+
+public class Variable {
+    public static void main(String[] args) {
+        /*
+
+        변수(Variable) : 하나의 값을 저장할수잇는 메모리공간
+
+        개발자들에게 권장하는 규칙 : 클래스의 이름 첫글자는 항상 대문자
+                                여러 단어로 이루어진 이름은 단어의 첫글자를 대문자로 ex) StringBuffer
+                                상수(final)의 이름은 모두 대문자, 여러단어로 이루어진경우 _로 구분 ex) MAX_NUMBER
+                                이름은 되도록 의미있는 이름으로
+        1byte : boolean, byte
+        2byte : char, short
+        4byte : int, float
+        8byte : long, double
+
+        float 에는 f double에는 d(생략가능)
+
+        char 은 반드시 하나의 문자가 필요 ex) char ch = ''; <- X
+
+        printf 은 줄바꿈을 하지않는다다
+
+        */
+        //상수 사용 예시
+//        final int MAX_SPEED; 선언과 초기화해야함
+        final int MAX_VALUE = 100; // 0
+//        MAX_VALUE = 200; 상수값 변경 불가능
+
+        int year = 0;
+        int age = 22;
+
+        System.out.println(year);
+        System.out.println(age);
+
+        year = age + 2000;
+        age = age + 1;
+
+        System.out.println(year);
+        System.out.println(age);
+
+        int x = 0;
+        int y = 22;
+        int tmp;
+
+        tmp = x;
+        x = y;
+        y = tmp;
+
+
+
+    }
+}
