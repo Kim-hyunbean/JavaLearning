@@ -1,0 +1,20 @@
+package Feb24;
+
+public class overflow {
+    public static void main(String[] args) {
+        // overflow 허용값을 넘엇을때 부름
+        // 메모리절약을 위해선 float 큰값의 범위나 높은 정밀도는 double
+        
+        float f = 9.123456789123456789f;
+
+        System.out.printf("f : %f\n", f);
+        //%f 는 소수점이하 6자리까지출력 7자리에서 반올림
+        
+        //casting 변수 또는 상수의 타입을 다른타입으로 변환하는것
+        double d = 85.4;
+        int score = (int) d;
+
+        System.out.println(score);
+        
+    }
+}
