@@ -1,0 +1,16 @@
+package Feb23;
+
+public class MainActivity {
+    public static void main(String[] args) {
+        boolean power ; //boolean의 기초값은 false
+        char ch = 'A' ; //유니코드형식으로 저장 ex) 65;
+        char ch2 = 65; //유니코드형식으로도 저장가능
+
+        System.out.println('\''); //'
+        System.out.println("abc\t123\b456"); //tab, backspace
+        System.out.println('\n'); //new Line
+        System.out.println("\"Hello\""); //큰따옴표
+        System.out.println("c:\\"); // 역슬래쉬
+        
+    }
+}
