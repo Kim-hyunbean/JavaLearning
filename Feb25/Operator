@@ -1,0 +1,21 @@
+package Feb25;
+
+public class Operator {
+    public static void main(String[] args) {
+
+        //연산자 기호 +
+        //피연산자 작업대상 x,3
+
+        int i = 5;
+        i++;
+        System.out.println(i);
+        System.out.println(i++); //6을받고 +
+        System.out.println(++i);//+받고 7
+
+        int i1 = 5;
+        ++i1;
+        System.out.println(i1);
+
+        System.out.println(10/4);//소수점이하는버려짐 0으로 나눌수없음
+    }
+}
