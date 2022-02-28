@@ -1,0 +1,30 @@
+package Feb28;
+
+import Feb22.Saccner;
+
+import java.util.Scanner;
+
+public class TrueFalse {
+    public static void main(String[] args) {
+
+        // '0' == 0 , false
+        // 'A' == 65, true
+        // 0.1 == 0.1f false
+        // && and, || or , ! 다를때
+
+        Scanner scanner = new Scanner(System.in);
+        char ch = ' ';
+
+        System.out.println("문자 하나를 입력하세요 > ");
+        String input = scanner.nextLine();
+        ch = input.charAt(0);
+
+        if ('0' <= ch && ch <= '9') {
+            System.out.print("숫자를 입력하엿습니다");
+        }else if (('a'<= ch && ch <= 'z') || ('A'<= ch && ch <= 'Z')){
+            System.out.println("알파벳을 입력하엿습니다");
+        }else {
+            System.out.println("알파벳이나 숫자를 입력하세요");
+        }
+    }
+}
