@@ -1,0 +1,21 @@
+package Mar02;
+
+import java.util.Scanner;
+
+public class IfSwitch {
+    public static void main(String[] args) {
+        // if문은 true or false값이 들어가야함
+        // block{} 은 한줄일 경우 생략가능
+        // case문간의 구분역활을 위하여 break를 사용
+        // break시 switch문을 빠져나가게 된다
+        System.out.print("숫자 하나를 입력하세요>>");
+        Scanner scanner = new Scanner(System.in);
+        int input = scanner.nextInt();
+
+        if(input == 0){
+            System.out.println("입력하신 숫자는 " +input+"입니다");
+        }else {
+            System.out.println("입력하신 숫자는 0이 아닙니다");
+        }
+    }
+}
