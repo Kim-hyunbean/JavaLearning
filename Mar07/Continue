@@ -1,0 +1,13 @@
+package Mar07;
+
+public class Continue {
+    public static void main(String[] args) {
+        for (int i=0; i<=10; i++) {
+            if (i%3==0){
+                continue;
+                //continue는 break와 달리 반복문을 벗어나지 않는다
+            }
+            System.out.println(i);
+        }
+    }
+}
