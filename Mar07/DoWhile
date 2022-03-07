@@ -1,0 +1,41 @@
+package Mar07;
+
+import java.util.Scanner;
+
+public class f123213 {
+
+    public static void main(String[] args) {
+       /* int input = 0;
+        int answer = 0;
+
+        answer = (int)(Math.random()*100)+1;
+        Scanner scanner = new Scanner(System.in);
+
+        do {
+            System.out.print("1~100사이 정수입력>>");
+            input = scanner.nextInt();
+
+            if (input > answer) {
+                System.out.println("더 작은수입니다");
+            } else if (input < answer) {
+                System.out.println("더 큰수입니다");
+            }
+        } while (input!=answer); //do while문 while(조건식일때) do문장을 수행행
+        System.out.println("정답입니다.");*/
+
+        for (int i=1; i<=100;i++) {
+            System.out.printf("i=%d ", i);
+
+            int tmp = i;
+
+            do {
+                if(tmp%10%3==0 && tmp%10!=0) {
+                    System.out.print("짝");
+                }
+
+            } while ((tmp/=10)!=0);
+
+            System.out.println();
+        }
+    }
+}
