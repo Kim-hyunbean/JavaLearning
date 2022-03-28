@@ -1,0 +1,27 @@
+package Mar28;
+
+public class mar28 {
+
+    public static void main(String[] args) {
+        int[] test;
+        int test2[];
+        int[] score = new int[5];
+        //길이가 0인 배열 생성가능
+        int tmp = score.length;
+        //길이 변경은 불가능
+
+        //배열의 복사
+
+        int[] arr = new int[5];
+        int[] tmp2 = new int[arr.length * 2];
+
+        for (int i = 0; i < arr.length; i++) {
+            tmp2[i] = arr[i];
+        }
+        arr = tmp2;
+        //더 쉬운방법
+        System.arraycopy(arr, 0, tmp2, 0, arr.length);
+        // arr[0]에서 tmp2[0]으로 arr.length개의 데이터를 복사한다다
+    }
+}
+
