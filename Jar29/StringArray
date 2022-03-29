@@ -1,0 +1,20 @@
+package Mar29;
+
+public class StringArray {
+    public static void main(String[] args) {
+        String[] name = new String[3];
+        name[0] = "테스트1";
+
+        String str = "012345";
+        char ch = str.charAt(3); //3을 저장
+        String tmp = str.substring(1,4);//4는 범위에 포함시키지 않음
+        System.out.println(tmp); //123
+
+        //2차원 배열
+        int[][] score = new int[4][3]; //4행 3열
+        int[][] arr = new int[][]{
+                {1,2,3},
+                {4,5,6}
+        };
+    }
+}
