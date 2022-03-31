@@ -1,0 +1,35 @@
+
+public class Property {
+
+    static String tet1;
+    //클래스변수
+    //공통된 값을 유지해야하는경우 static을 사용
+    int result = add(3,4);
+    public static void main(String[] args) {
+        //속성
+        //인스턴스변수
+        String color;
+        boolean power;
+        int channel;
+                
+        
+
+        //메서드
+        //void power() 켜기끄기
+        //void channelup
+        //void channelDown
+
+        //일반적으로 메서드보다는 변수를 먼저 선언한다 끼리끼리 모아둔다다
+    }
+    
+    /*return
+        void가 아닌경우 {}안에 반드시포함되어야함
+        반환값의 타입을 넣을려면 반환타입과 일지하거나 자동형변환이 가능하여아한다
+        메서드 내에 선언된 변수는 메서드내에서만 사용가능
+         */
+    int add(int x, int y) {
+        int result = x+y;
+        return result;
+        // result add는 둘다 int형
+    }
+}
