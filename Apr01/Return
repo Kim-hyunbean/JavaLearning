@@ -1,0 +1,9 @@
+package Apr01;
+
+public class ReturnEx {
+    public static void main(String[] args) {
+        //void는 return이 자동적으로 추가되어있다.
+
+        //공통으로 사용하는것에는static을 붙인다
+    }
+}
