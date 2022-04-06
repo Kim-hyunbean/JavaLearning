@@ -1,0 +1,24 @@
+package Apr06;
+
+public class overRiding {
+    public static void main(String[] args) {
+     //오버로딩 : 한클래스 내에 같은 이름의 메서드를 여러개 정의하는 것
+
+
+        //Data2 d2 = new Data2();
+        //생성자를 정의해야한다다
+
+        //다른 생성자 호출
+        //클래스이름대신 this 사용
+        //한 생성자에서 다른 생성자를 호출할때때 첫줄에서만 출이가능
+    }
+
+
+}
+class Data2 {
+    int value;
+
+    Data2 (int x) {
+        value = x;
+    }
+}
