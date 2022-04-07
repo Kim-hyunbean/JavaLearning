@@ -1,0 +1,19 @@
+package Apr07;
+
+public class Inheritance {
+    //Inherintance 상속
+    public static void main(String[] args) {
+
+        //extends 상속
+        //상속은 단일만 가능
+    }
+
+    class Tv {
+        int a;
+    }
+
+    class remote extends  Tv {
+        
+    }
+
+}
