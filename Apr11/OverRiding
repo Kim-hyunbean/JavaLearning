@@ -1,0 +1,35 @@
+public class OverRiding {
+    public static void main(String[] args) {
+        //overloading 새로운 메서드를 정의하는것
+        //overriding 상속받은 메서드의 내용을 변경하는 것
+        //super =this비슷
+        Point3D p3 = new Point3D(1,2,3);
+    }
+
+}
+class Point {
+    int x, y;
+
+    Point (int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+    String getLocation() {
+        return "x : " + x + ", y : " + y;
+    }
+}
+
+class Point3D extends Point {
+    int z;
+
+    Point3D(int x, int y, int z) {
+
+        super(x, y);
+        //다른 생성자를 호출하지 않앗기 때문에 suepr를 삽입
+        //조상의 생성자에 의해 초기화되도록 해야 한다.
+        this.z = z;
+    }
+    String getLocation() {
+        return "x : " + x + ", y : " + y + " , z :" + z;
+    }
+}
