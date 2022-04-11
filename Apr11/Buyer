@@ -1,0 +1,108 @@
+package Apr11;
+
+import java.util.Scanner;
+import java.util.Vector;
+
+public class Buyer {
+    public static void main(String[] args) {
+
+        int money = 1000;
+        Vector item = new Vector();
+        int tv= 450;
+        int computer = 200;
+        int keyboard = 20;
+        int refrigeator = 300;
+        int vacuumCleaner = 100;
+
+
+        for (int i=1; i!=0 ;i++) {
+            System.out.println("<<구입 하실 제품을 선택하세요>>");
+            System.out.println("현재금액 : " + money + "원");
+            System.out.println("현재 산 물품 : " + item);
+            System.out.print("1.TV(450), 2.Computer(200), 3.Keyboard(20), 4.Refrigerator(300), 5.VacuumCleaner(100) , 0.종료 >> ");
+            Scanner scanner = new Scanner(System.in);
+            int key = scanner.nextInt();
+            switch (key) {
+                case 1 :
+                    if (money < tv) {
+                        System.out.println("");
+                        System.out.println("잔액이 부족하여 물건을 살 수 없습니다.");
+                        System.out.println("");
+                        break;
+                    }
+                    System.out.println("");
+                    System.out.println("TV를 구매하셨습니다.");
+                    item.add("TV");
+                    money = money - tv;
+                    System.out.println("");
+                    break;
+                case 2 :
+                    if (money < computer) {
+                        System.out.println("");
+                        System.out.println("잔액이 부족하여 물건을 살 수 없습니다.");
+                        System.out.println("");
+                        break;
+                    }
+                    System.out.println("");
+                    System.out.println("Computer를 구매하셨습니다.");
+                    item.add("Computer");
+                    money = money - computer;
+                    System.out.println("");
+                    break;
+
+                case 3 :
+                    if (money < keyboard) {
+                        System.out.println("");
+                        System.out.println("잔액이 부족하여 물건을 살 수 없습니다.");
+                        System.out.println("");
+                        break;
+                    }
+                    System.out.println("");
+                    System.out.println("Keyboard를 구매하셨습니다.");
+                    item.add("Keyboard");
+                    money = money - keyboard;
+                    System.out.println("");
+                    break;
+
+                case 4 :
+                    if (money < refrigeator) {
+                        System.out.println("");
+                        System.out.println("잔액이 부족하여 물건을 살 수 없습니다.");
+                        System.out.println("");
+                        break;
+                    }
+                    System.out.println("");
+                    System.out.println("Refrigerator를 구매하셨습니다.");
+                    item.add("Refrigerator");
+                    money = money - refrigeator;
+                    System.out.println("");
+                    break;
+
+                case 5 :
+                    if (money < vacuumCleaner) {
+                        System.out.println("");
+                        System.out.println("잔액이 부족하여 물건을 살 수 없습니다.");
+                        System.out.println("");
+                        break;
+                    }
+                    System.out.println("");
+                    System.out.println("VacuumCleaner를 구매하셨습니다.");
+                    item.add("VacuumCleaner");
+                    money = money - vacuumCleaner;
+                    System.out.println("");
+                    break;
+
+                case 0 :
+                    System.out.println("");
+                    System.out.println("프로그램을 종료합니다.");
+                    System.out.println("");
+                    return;
+
+                default:
+                    System.out.println("");
+                    System.out.println("값을다시입력해주세요");
+                    System.out.println("");
+            }
+        }
+    }
+}
