@@ -1,0 +1,16 @@
+package Apr11;
+
+public class Modifier {
+    public static void main(String[] args) {
+        //제어자 , public, protected, default, private ...
+        //static 변수 공통적으로 사용되는 클래스변수, 인스턴스 생성 X
+        //static mathod 인스턴스 생성X 메서드내에서 인스턴스멤버 직접 사용X
+        //final 변수 값 변경 불가능
+        //final mathod 오버라이딩 X
+        //fianl 클래스 다른클래스의 조상X
+
+        //public > protected > (default) > private
+        //public 접근 제한 X
+        //private 같은 클래스내에서만 사용가능
+    }
+}
