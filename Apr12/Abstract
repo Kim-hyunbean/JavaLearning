@@ -1,0 +1,50 @@
+package Apr12;
+
+public class abstractClass {
+    public static void main(String[] args) {
+
+    }
+
+    //추상메서드 클래스간 공통점으로 조상을 만드는형태
+    abstract class Unit {
+        int x, y;
+        abstract void move(int x, int y);
+        void stop() {
+
+        }
+    }
+
+    class  Marine extends Unit {
+
+        @Override
+        void move(int x, int y) {
+
+        }
+        void stimPack() {
+
+        }
+    }
+    class Tank extends Unit {
+
+        @Override
+        void move(int x, int y) {
+
+        }
+        void charging() {
+
+        }
+    }
+
+    class dropShip implements testInter {
+
+        @Override
+        public void moving(int x, int y) {
+
+        }
+
+        void drop() {
+
+        }
+    }
+
+}
