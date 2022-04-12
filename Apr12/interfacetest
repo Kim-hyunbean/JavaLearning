@@ -1,0 +1,8 @@
+package Apr12;
+
+public interface testInter {
+    // 추상메서드를 사용하는 가장보편적인 방법
+    // 인터페이스는 인터페이스만 상속받을수가있다.
+
+    public void moving(int x, int y);
+}
