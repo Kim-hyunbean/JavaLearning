@@ -1,0 +1,9 @@
+package Apr12;
+
+public class innerClass {
+    public static void main(String[] args) {
+        //내부클래스의 장점 코드의 복잡성 완화
+        //하지만 잘쓰이지않는다.
+        //instance static local anonymous 사용가능
+    }
+}
