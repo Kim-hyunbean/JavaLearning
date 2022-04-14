@@ -1,0 +1,25 @@
+package Apr14;
+
+public class JavaLong implements Cloneable {
+    //clonable을 호출한 상태에서만 clone()호출가능
+    public static void main(String[] args) {
+        String str1 = new String("test1");
+        String str2 = new String("test2");
+
+        System.out.println(str1.equals(str2));
+        System.out.println(str1.hashCode());
+        System.out.println(str1.toString());
+        
+    }
+    
+    public Object clone() {
+        Object obj = null;
+        try {
+           obj = super.clone();
+        }catch (CloneNotSupportedException e) {
+            
+        }
+       return  obj;
+    }
+    //안쓸듯
+}
