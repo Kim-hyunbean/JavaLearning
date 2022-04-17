@@ -1,0 +1,9 @@
+package Apr17;
+
+public class wrapper {
+    public static void main(String[] args) {
+        //1~6사이의 랜덤정수를 반환
+        int num = (int) (Math.random() * 6) + 1;
+        System.out.println(num);
+    }
+}
