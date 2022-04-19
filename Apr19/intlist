@@ -1,0 +1,47 @@
+package Apr19;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class int100 {
+    public static void main(String[] args) {
+
+        int line = 1;
+
+
+        System.out.print("정수 몇개?");
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+        int arry[] = new int[num];
+        if (num >= 100) {
+            System.out.println("값을 다시 입력해주세요");
+            return;
+        }else {
+            for (int i = 0; i< num ; i++) {
+                int a = (int) (Math.random()*100 +1);
+                arry[i]=a;
+                for (int j = 0; j< i ; j++) {
+                    if (arry[j]==arry[i]) {
+                        i = i -1;
+                        continue;
+                    }
+                }
+            }
+            System.out.print("[");
+            for (int i = 0; i<num ; i ++) {
+                if (i ==num-1) {
+                    System.out.println(arry[i] + "]");
+                }else {
+                    System.out.print(arry[i]+", ");
+                }
+                if (line == 10) {
+                    System.out.println("");
+                    line = 0;
+                }
+                line = line +1;
+            }
+
+
+        }
+    }
+}
