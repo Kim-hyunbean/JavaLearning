@@ -1,0 +1,91 @@
+package Apr22;
+
+import java.util.Scanner;
+
+public class RSP {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        for (int i = 0; i<100; i ++) {
+            System.out.print("가위(0), 바위(1), 보(2) 중 하나를 내세요 3버튼 입력시 중단 >> ");
+            int uHand = scanner.nextInt();
+            if (uHand == 3) {
+                System.out.println("프로그램을 중단합니다");
+                break;
+            }else if (uHand >=4) {
+                System.out.println("다시입력해주세요");
+                continue;
+            }else if (uHand < 0) {
+                System.out.println("다시입력해주세요");
+                continue;
+            }
+
+            result(uHand);
+        }
+
+    }
+
+    private static void result(int uHand) {
+
+        int  cresult;
+
+
+
+        switch (uHand) {
+            case 0 :
+                System.out.println("당신은 가위를 냈습니다.");
+                break;
+            case 1 :
+                System.out.println("당신은 바위를 냈습니다.");
+                break;
+            case 2 :
+                System.out.println("당신은 보를 냈습니다");
+                break;
+            default:
+                break;
+        }
+
+        cresult = (int)(Math.random()*3);
+
+        switch (cresult) {
+            case 0:
+                System.out.println("컴퓨터는 가위를 냈습니다");
+                break;
+            case 1:
+                System.out.println("컴퓨터는 바위를 냈습니다");
+                break;
+            case 2:
+                System.out.println("컴퓨터는 보를 냈습니다");
+                break;
+        }
+
+        if (uHand ==0) {
+            if (cresult == 0){
+                System.out.println("당신은 비겼습니다.");
+            }else if (cresult == 1) {
+                System.out.println("당신은 졌습니다.");
+            }else
+                System.out.println("당신은 이겼습니다.");
+        }else if (uHand ==1) {
+            if (cresult == 0){
+                System.out.println("당신은 이겼습니다.");
+            }else if (cresult == 1) {
+                System.out.println("당신은 비겼습니다.");
+            }else
+                System.out.println("당신은 졌습니다.");
+        }else if (uHand ==2) {
+            if (cresult == 0){
+                System.out.println("당신은 졌습니다.");
+            }else if (cresult == 1) {
+                System.out.println("당신은 이겼습니다.");
+            }else
+                System.out.println("당신은 비겼습니다.");
+        }
+        System.out.println("");
+
+
+
+    }
+
+
