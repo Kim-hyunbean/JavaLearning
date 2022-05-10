@@ -1,0 +1,15 @@
+package May10;
+
+import java.util.ArrayList;
+
+public class LinkedList {
+    public static void main(String[] args) {
+
+        ArrayList al = new ArrayList(2000);
+        LinkedList ll = new LinkedList();
+
+        //arraylist와 linkedlist의 차이점
+        // 크기변경 불가능
+        // 데이터추가 삭제에 시간이 더많이걸림림
+    }
+}
